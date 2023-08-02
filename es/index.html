@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloha Elotes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>aloha elotes</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Sobre nosotros</h2>
+      <p>Bienvenido/a a Aloha Elotes, tu destino único para deliciosos elotes mexicanos. Nos enorgullecemos de ofrecer los elotes más sabrosos que transportarán tus papilas gustativas a las soleadas calles de México. ¡Ven y experimenta los sabores de Aloha Elotes hoy mismo!</p>
+      <button id="copyAddressBtn">🗺️ Copiar dirección</button>
+      <button id="visitUsBtn">📍 Ver en el mapa</button>
+      <button id="viewHoursBtn">⌚ Ver horarios</button>
+     <div id="popupMessage" class="popup">Allan please add details</div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><span>Elote Clásico</span> - Elote Clásico recién asado a la parrilla, cubierto con mayonesa, queso, chile en polvo y limón.</li>
+        <li><span>Elote Flaming Hot</span> - Nuestro Elote Clásico llevado al siguiente nivel con una intensa y picante mezcla de chiles.</li>
+        <li><span>Elote Chipotle con Queso</span> - Un giro cremoso y ahumado del elote tradicional, cubierto con salsa de chipotle.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contáctenos</h2>
+      <p>Si tienes alguna pregunta o comentario, ¡no dudes en contactarnos!</p>
+      <form id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Aloha Elotes. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
+

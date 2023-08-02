@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloha Elotes</title>
+</head>
+<body>
+    <script>
+        function detectLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            return userLang.toLowerCase();
+        }
+
+        function redirectToLanguage() {
+            const userLang = detectLanguage();
+
+            const supportedLanguages = ['en', 'es'];
+
+            if (supportedLanguages.includes(userLang)) {
+                window.location.href = `./${userLang}/`;
+            } else {
+                window.location.href = './en/';
+            }
+        }
+
+        redirectToLanguage();
+    </script>
+</body>
+</html>
+
